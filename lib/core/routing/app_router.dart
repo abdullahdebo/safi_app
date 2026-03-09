@@ -3,7 +3,8 @@ import 'package:safi_delivery/core/routing/routes.dart';
 import 'package:safi_delivery/features/home/ui/home_screen.dart';
 import 'package:safi_delivery/features/login/ui/login_screen.dart';
 import 'package:safi_delivery/features/onboarding/ui/onboarding_screen.dart';
-import 'package:safi_delivery/features/splash/ui/splash_screen.dart';
+import 'package:safi_delivery/features/register/ui/register_screen.dart';
+import 'package:safi_delivery/features/splash/splash_screen.dart';
 
 class AppRouter {
   Route generateRoute(RouteSettings settings) {
@@ -23,6 +24,10 @@ class AppRouter {
       case Routes.login:
         return MaterialPageRoute(
           builder: (_) => const LoginScreen(),
+        );
+      case Routes.register:
+        return MaterialPageRoute(
+          builder: (_) => const RegisterScreen(),
         );
       default:
         return MaterialPageRoute(
